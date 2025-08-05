@@ -1,96 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky-Rush - Inicio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo-link">
+                <img src="logo.png" alt="Sky-Rush Logo" class="logo">
+                <h1>Sky-Rush</h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="modalidades.html">Modalidades</a></li>
+                    <li><a href="reglas.html">Reglas</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="informacion.html">Información</a></li>
+                    <li><a href="anuncios.html">Anuncios</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-button">☀️</button>
+            <button id="mobile-menu-btn" class="mobile-menu-button">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2>Bienvenido a Sky-Rush</h2>
+                <p>La experiencia definitiva de Minecraft 1.8 te espera.</p>
+                <div class="ip-container">
+                    <span id="ip-address">play.sky-rush.xyz</span>
+                    <button id="copy-ip-btn">Copiar IP</button>
+                </div>
+                 <div class="player-count">
+                    <p>Jugadores en línea: <span id="player-count-num">...</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro-cards">
+             <div class="card-container">
+                <div class="card">
+                    <h3>🚀 Modalidades Únicas</h3>
+                    <p>Desde el competitivo HCF hasta el caótico TNT Run. ¡Descubre tu modo de juego favorito!</p>
+                    <a href="modalidades.html" class="btn">Ver Modalidades</a>
+                </div>
+                <div class="card">
+                    <h3>📜 Reglas Claras</h3>
+                    <p>Mantenemos una comunidad justa y divertida. Conoce nuestras reglas para una mejor experiencia.</p>
+                    <a href="reglas.html" class="btn">Leer Reglas</a>
+                </div>
+                <div class="card">
+                    <h3>💡 Centro de Ayuda</h3>
+                    <p>¿Tienes dudas? Nuestro apartado de 'Help' tiene guías y respuestas a preguntas frecuentes.</p>
+                    <a href="help.html" class="btn">Obtener Ayuda</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sky-Rush Network. Todos los derechos reservados.</p>
+        <p>No estamos afiliados con Mojang AB.</p>
+    </footer>
+</body>
 </html>
